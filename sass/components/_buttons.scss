@@ -1,0 +1,100 @@
+/**
+third partial
+*/
+
+.btn {
+  width: 200px;
+  height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 0.06em;
+  line-height: 1.88;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  gap: 10px;
+
+  color: var(--txt-main-color);
+  background-color: var(--brand-color);
+  border: none;
+  border-radius: 4px;
+
+  transition-property: background-color;
+  transition-duration: var(--animation-duration);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: var(--btn-color-hvr);
+    color: var(--txt-main-color);
+    border: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    fill: var(--brand-color);
+    cursor: pointer;
+  }
+}
+
+.subscribe-btn {
+  left: 370px;
+}
+
+// portfolio buttons
+.filter-btn {
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  border: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  line-height: 1.39;
+  text-align: center;
+  vertical-align: top;
+  letter-spacing: 3%;
+  padding: 6px 22px;
+  transition: background-color var(--animation-duration) var(--timing-function),
+    color var(--animation-duration) var(--timing-function),
+    box-shadow var(--animation-duration) var(--timing-function);
+
+  &:hover,
+  &:focus {
+    background-color: var(--btn-color-hvr);
+    color: var(--txt-main-color);
+    border: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    fill: var(--brand-color);
+    cursor: pointer;
+  }
+}
+
+// close button
+.modal-close-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 30px;
+  height: 30px;
+  transform: translate(-25%, 25%);
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: white;
+  padding: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.modal-close-btn {
+  &:hover {
+    fill: var(--brand-color);
+    border: 1px solid var(--brand-color);
+  }
+}
